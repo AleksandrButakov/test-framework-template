@@ -1,6 +1,7 @@
 package cloud.autotests.config;
 
 import org.aeonbits.owner.Config;
+import org.graalvm.compiler.lir.LIRInstruction;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
@@ -21,8 +22,10 @@ public interface ProjectConfig extends Config {
 
     String browserMobileView();
 
+    @DefaultValue("http://62.113.108.218:4444/wd/hub")
     String remoteDriverUrl();
 
+    @DefaultValue("http://62.113.108.218:8080/video/")
     String videoStorage();
 
 }
