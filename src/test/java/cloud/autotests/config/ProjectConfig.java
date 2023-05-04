@@ -12,12 +12,18 @@ public interface ProjectConfig extends Config {
 
     @DefaultValue("chrome")
     String browser();
+
     @DefaultValue("112.0")
     String browserVersion();
+
     @DefaultValue("1920x1080")
     String browserSize();
+
     String browserMobileView();
+
     String remoteDriverUrl();
+
+    @DefaultValue("http://62.113.108.218:8080/video/")
     String videoStorage();
 
 }
