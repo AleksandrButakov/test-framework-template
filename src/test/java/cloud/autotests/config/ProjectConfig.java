@@ -22,10 +22,10 @@ public interface ProjectConfig extends Config {
 
     String browserMobileView();
 
-    @DefaultValue("http://62.113.108.218:4444/wd/hub")
+    //@DefaultValue("http://62.113.108.218:4444/wd/hub")
     String remoteDriverUrl();
 
-    @DefaultValue("http://62.113.108.218:8080/video/")
+    //@DefaultValue("http://62.113.108.218:8080/video/")
     String videoStorage();
 
 }
