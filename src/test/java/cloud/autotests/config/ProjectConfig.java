@@ -23,7 +23,6 @@ public interface ProjectConfig extends Config {
 
     String remoteDriverUrl();
 
-    @DefaultValue("http://62.113.108.218:8080/video/")
     String videoStorage();
 
 }
